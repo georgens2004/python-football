@@ -1,0 +1,128 @@
+SCREEN_X_SIZE = 1280
+SCREEN_Y_SIZE = 900
+
+GAME_FREQUENCY = 0.01
+
+''' Game settings '''
+
+# Teams
+
+INIT_TEAM_CRD_0 = [[SCREEN_X_SIZE // 4, SCREEN_Y_SIZE // 4], 
+                   [SCREEN_X_SIZE // 4, SCREEN_Y_SIZE // 4 + 100],
+                   [SCREEN_X_SIZE // 4, SCREEN_Y_SIZE // 4 + 200],
+                   [SCREEN_X_SIZE // 4, SCREEN_Y_SIZE // 4 + 300],
+                   [SCREEN_X_SIZE // 4, SCREEN_Y_SIZE // 4 + 400],
+]
+
+INIT_TEAM_CRD_1 = [[SCREEN_X_SIZE // 4 * 3, SCREEN_Y_SIZE // 4 * 3], 
+                   [SCREEN_X_SIZE // 4 * 3, SCREEN_Y_SIZE // 4 * 3 - 100],
+                   [SCREEN_X_SIZE // 4 * 3, SCREEN_Y_SIZE // 4 * 3 - 200],
+                   [SCREEN_X_SIZE // 4 * 3, SCREEN_Y_SIZE // 4 * 3 - 300],
+                   [SCREEN_X_SIZE // 4 * 3, SCREEN_Y_SIZE // 4 * 3 - 400],
+]
+
+TEAM_PLAYERS_NUMBER = 5
+
+# Players
+
+PLAYER_COLORS = [[2, 82, 8], [1, 79, 135]]
+PLAYER_IMAGES = ["player_team_0.png", "player_team_1.png"]
+PLAYER_RADIUS = 18
+
+DEFAULT_SPEED = 5
+DEFAULT_POWER = 10
+DEFAULT_CATCH_RADIUS = 5
+
+CONTROLLED_SPEED = 6
+CONTROLLED_POWER = 12
+CONTROLLED_CATCH_RADIUS = 5
+
+BIG_RADIUS = 10000
+
+PLAYER_NUMBER_FONT = "Comic Sans MS"
+PLAYER_NUMBER_FONT_SIZE = 30
+
+# Ball
+
+BALL_RADIUS = 20
+BALL_DIST_TO_OWNER = 5
+BALL_SPEED_REGRESSION = 0.1
+BALL_IMAGE = "ball.png"
+
+''' Field settings '''
+
+FIELD_IMAGE = "new_field.png"
+FIELD_BLURED_IMAGE = "new_field_blured.png"
+
+GATES_0 = [[85, 365], [85, 530]]
+GATES_1 = [[1195, 365], [1195, 530]]
+
+CORNERS = [
+    [85, 80], [1195, 80],
+    [1195, 830], [85, 830]
+]
+
+SCOREBOARD_IMAGE = "scoreboard.png"
+SCOREBOARD_SIZE_X = 120
+SCOREBOARD_SIZE_Y = 80
+SCOREBOARD_FONT = "joystix-monospace.ttf"
+SCOREBOARD_FONT_SIZE = 30
+
+SCOREBOARD_GOALS_0_X_OFFSET = 33
+SCOREBOARD_GOALS_0_Y_OFFSET = 50
+SCOREBOARD_GOALS_1_X_OFFSET = 87
+SCOREBOARD_GOALS_1_Y_OFFSET = 50
+
+''' Button settings '''
+
+BTN_FONT = "Comic Sans MS"
+BTN_FONT_SIZE = 84
+BTN_IMAGE = "btn.png"
+
+''' Menu settings '''
+
+MAIN_MENU_BACKGROUND_IMAGE = "new_field_blured.png"
+
+MAIN_MENU_CENTER_INDENT = -100
+MENU_BTN_SIZE_X = 600
+MENU_BTN_SIZE_Y = 200
+MENU_BTN_Y_PADDING = 20
+
+''' Static and media files '''
+
+STATIC_IMAGES_FOLDER = "static/images/"
+STATIC_FONTS_FOLDER = "static/fonts/"
+
+
+''' Game modes config '''
+
+GAMEMODE_UNLIMITED_5v5_TEAM_SIZE_0 = 5
+GAMEMODE_UNLIMITED_5v5_TEAM_SIZE_1 = 5
+
+GAMEMODE_UNLIMITED_3v3_TEAM_SIZE_0 = 3
+GAMEMODE_UNLIMITED_3v3_TEAM_SIZE_1 = 3
+
+''' Popup settings '''
+
+POPUP_FONT = "joystix-monospace.ttf"
+POPUP_FONT_SIZE = 240
+
+POPUP_BTN_CENTER_INDENT = 150
+POPUP_BTN_Y_PADDING = 20
+
+POPUP_GOAL = "GOAL"
+POPUP_GOAL_TICKS = 120
+
+POPUP_BALL_OUT = "OUT"
+POPUP_BALL_OUT_TICKS = 80
+
+''' Replay settings '''
+
+REPLAY_BTN_SIZE_X = 500
+REPLAY_BTN_SIZE_Y = 120
+
+REPLAY_SAVED_TICKS = 300
+
+REPLAY_FIELD_TEXT = "REPLAY"
+REPLAY_FIELD_TEXT_FONT = "joystix-monospace.ttf"
+REPLAY_FIELD_TEXT_SIZE = 160
