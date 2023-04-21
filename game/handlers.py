@@ -7,7 +7,6 @@ from match import game
 
 import match.popup as popup
 
-'''   Handlers   '''
 
 def game_event_handler(event):
     if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
@@ -18,6 +17,7 @@ def game_event_handler(event):
     
     game.game.handle_event(event)
 
+
 def menu_event_handler(event):
     if menu.current_menu == "Main":
         menu.main_menu.pick_setting(event)
@@ -25,10 +25,7 @@ def menu_event_handler(event):
 def popup_event_handler(event):
     popup.popup.pick_setting(event)
 
-'''   End   '''
-
 class AppState():
-    # Application state (and handling events)
 
     states_and_handlers = {
         "Game": game_event_handler,

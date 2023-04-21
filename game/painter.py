@@ -2,9 +2,6 @@ import pygame, sys
 import config
 
 class Painter():
-    # Class for drawing every object on the screen each tick 
-    # Very useful in cases when we have like game, players, ball and popup
-    # Singleton class
 
     draw_funcs = []
 
@@ -25,7 +22,6 @@ class Painter():
         return None
     
     def paint(self):
-        # Drawing everything on the screen each tick
         for draw_func in self.draw_funcs:
             draw_func()
 

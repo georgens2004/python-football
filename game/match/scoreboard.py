@@ -2,7 +2,6 @@ import pygame, sys
 import config
 
 class Scoreboard():
-    # Basic game scoreboard
 
     def __init__(self, screen):
         self.screen = screen

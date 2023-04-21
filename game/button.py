@@ -25,7 +25,6 @@ def show_replay_call(screen):
 '''   End   '''
 
 class Button():
-    # Basic button class
 
     def __init__(self, screen, text, size_x, size_y, on_click):
         self.screen = screen
@@ -52,7 +51,6 @@ class Button():
         self.screen.blit(self.text_rendered, self.text_rect)
     
     def click(self, event):
-        # Check if button was clicked
         if event.type != pygame.MOUSEBUTTONDOWN:
             return
         pos = pygame.mouse.get_pos()
@@ -71,7 +69,6 @@ quit_btn = None
 show_replay_btn = None
 
 def init_buttons(screen):
-    # Initializing some global buttons in the beginning of the program
     global start_game_btn
     start_game_btn = Button(screen, "Start game", config.MENU_BTN_SIZE_X, config.MENU_BTN_SIZE_Y, start_game_call)
     global quit_btn

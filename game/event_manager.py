@@ -7,7 +7,7 @@ import handlers
 import match.popup as popup
 
 def manage_events(screen):
-    # Events management
+    # events management
     if game.game is not None:
         game.game.tick()
     

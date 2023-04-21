@@ -2,7 +2,6 @@ import pygame, sys
 import config
 
 class Background():
-    # Basic background class (presents only in menus)
 
     def __init__(self, screen, image_name):
         self.screen = screen

@@ -9,8 +9,6 @@ from handlers import AppState
 import button
 
 class Menu():
-    # Basic menu class
-    # Contains buttons
 
     def __init__(self, screen, background_image, buttons):
         self.screen = screen
@@ -25,7 +23,6 @@ class Menu():
             btn.draw()
 
     def pick_setting(self, event):
-        # If any button was pressed
         if event.type != pygame.MOUSEBUTTONDOWN:
             return
         for btn in self.buttons:
@@ -35,7 +32,6 @@ class Menu():
 main_menu = None
 
 def init_menus(screen):
-    # Initializing all menus in the beginning of the program
     global main_menu
     main_menu = Menu(screen, config.MAIN_MENU_BACKGROUND_IMAGE, [
         button.start_game_btn,

@@ -22,7 +22,7 @@
 
 `<Space>` - shooting (does nothing if player without ball)
 
-`1-5` - switching controlled player
+`1-6` - switching controlled player
 
 ---
 
@@ -38,7 +38,7 @@ This is the main game menu. Now there're only 2 options: to start a new game (ga
 
 ## Game
 
-Here is a basic lineup (don't blame me, I don't play football at all) You are playing 5 vs 5, everytime you controll only one player in your team (left one). At the start of the game your controlled player is `3`, you can switch player anytime. 
+You are playing 5v5 football game. Everytime you controll only one player in your team (left one). At the start of the game your controlled player is `6`, you can switch player anytime. 
 
 ![Screenshot](screenshots/game_start.png)
 
@@ -59,7 +59,3 @@ If your team or your enemy scores a goal, you will have another popup for some t
 ![Screenshot](screenshots/goal.png)
 
 ![Screenshot](screenshots/replay.png)
-
----
-
-In the future I'm think of changing bot's behaviour to something more beautiful and enjoyable

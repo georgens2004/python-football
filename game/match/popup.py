@@ -3,11 +3,9 @@ import config
 import pygame
 import match.game as game
 
-# We have maximum one popup everytime
 popup = None
 
 class Popup():
-    # Basic game popup (now present 'Out' and 'Goal')
 
     def __init__(self, screen, text, ticks, buttons=[]):
         self.screen = screen
@@ -24,13 +22,10 @@ class Popup():
         self.hidden = False
     
     def show(self):
-        # Show popup
         game.game.pause()
         Painter().add(self.draw)
 
     def draw(self):
-        # Popup drawing function
-        # Draws if not hidden (by replay for example)
         if Painter().top() != self.draw:
             self.hidden = True
             return
@@ -43,7 +38,6 @@ class Popup():
             self.disappear()
     
     def disappear(self):
-        # Remove popup when it's time ran out
         Painter().pop()
         game.game.unpause()
         game.game.restart()
@@ -51,8 +45,6 @@ class Popup():
         popup = None
     
     def pick_setting(self, event):
-        # Left mouse button clicked
-        # Check if clicked some of the buttons
         for btn in self.buttons:
             if btn.click(event):
                 break
