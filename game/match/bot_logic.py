@@ -221,7 +221,7 @@ class BotStriker(BotPlayer):
                 self.attack_with_ball(nearest_enemy)
                 return
             dist_to_teammate = self.get_dist(nearest_teammate.pos)
-            if (config.BOT_STRIKER_MIN_DIST_TO_TEAMMATE_TO_PASS < dist_to_teammate and dist_to_teammate < config.BOT_STRIKER_MAX_DIST_TO_TEAMMATE_TO_PASS) or self.get_dist(nearest_enemy.pos) < config.BOT_STRIKER_DANGEROUS_DIST_TO_ENEMY:
+            if (config.BOT_STRIKER_MIN_DIST_TO_TEAMMATE_TO_PASS < dist_to_teammate and dist_to_teammate < config.BOT_STRIKER_MAX_DIST_TO_TEAMMATE_TO_PASS) or (nearest_enemy is not None and self.get_dist(nearest_enemy.pos) < config.BOT_STRIKER_DANGEROUS_DIST_TO_ENEMY):
                 self.turn_to(nearest_teammate.pos)
                 self.shoot()
             else:
